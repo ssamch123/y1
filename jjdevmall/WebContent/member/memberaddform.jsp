@@ -1,27 +1,27 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"> </script>
 <script>
     $(document).ready(function(){
     	$('#submitbtn').click(function(){
     		if ($('#memberid').val()==''){
-    			$('#memberidHelper').text('¾ÆÀÌµğ¸¦ ÀÔ·ÂÇÏ¼¼¿ä');
+    			$('#memberidHelper').text('ì•„ì´ë””ë¥¼ ì…ë ¥í•˜ì„¸ìš”');
     			
     		}else if ($('#memberpw').val()==''){
-    			$('#memberpwHelper').text('ºñ¹øÀ» ÀÔ·ÂÇÏ¼¼¿ä');
+    			$('#memberpwHelper').text('ë¹„ë²ˆì„ ì…ë ¥í•˜ì„¸ìš”');
     		
     		}else if($('#membername').val()==''){
-    			$('#membernameHelper').text('ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä');
+    			$('#membernameHelper').text('ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”');
     			
     		}else if($('#membersex').val()==''){
-    			$('#membersexHelper').text('¼ºº°À» ÀÔ·ÂÇÏ¼¼¿ä');
+    			$('#membersexHelper').text('ì„±ë³„ì„ ì…ë ¥í•˜ì„¸ìš”');
     		}else if($('#memberage').val()==''){
-    			$('#memberageHelper').text('³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä');
+    			$('#memberageHelper').text('ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš”');
     		}else{
     		$('#memberform').submit();
   	 		}	
@@ -37,17 +37,17 @@
 	
 			
 	 <form id="memberform" action="./memberaddaction.jsp" method="post"> 
-	 <input id="memberid" type="text" name="memberid">¾ÆÀÌµğ
+	 <input id="memberid" type="text" name="memberid">ì•„ì´ë””
 	 <span id="memberidHelper"></span>	
-	 <input id="memberpw" type="text" name="memberpw">ºñ¹Ğ¹øÈ£
+	 <input id="memberpw" type="text" name="memberpw">ë¹„ë°€ë²ˆí˜¸
 	 <span id="memberpwHelper"></span>
-	<input id="membername" type="text"	name="membername">ÀÌ¸§
+	<input id="membername" type="text"	name="membername">ì´ë¦„
 	 <span id="membernameHelper"></span>
-	 <input id="membersex" type="text" name="membersex">¼ºº°
+	 <input id="membersex" type="text" name="membersex">ì„±ë³„
 	  <span id="membersexHelper"></span>
-	 <input id="memberage" type="text" name="memberage">³ªÀÌ
+	 <input id="memberage" type="text" name="memberage">ë‚˜ì´
 	  <span id="memberageHelper"></span>
-	 <input id="submitbtn" type="button" value="ÀÔ·Â"/>
+	 <input id="submitbtn" type="button" value="ì…ë ¥"/>
 		
 	
 </form>
